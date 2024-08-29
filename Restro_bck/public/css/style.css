@@ -1,0 +1,731 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: IBM Plex Mono;
+    text-decoration: none;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    /* padding: 30px; */
+    /* border: 2px solid black; */
+    align-items: center;
+}
+
+.logo {
+
+    /* border: 2px solid black; */
+    display: flex;
+
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+
+}
+
+.tags a {
+    /* border: 2px solid black; */
+    padding: 10px 20px;
+    color: rgb(75, 48, 37);
+    font-weight: bolder;
+
+}
+
+.tags i {
+
+    position: relative;
+    font-size: 20px;
+
+
+}
+
+.tags span {
+    position: absolute;
+    background-color: rgb(252, 240, 166);
+    color: rgb(75, 48, 37);
+    top: -10px;
+    right: -10px;
+    padding: 2px 5px;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.tags :hover {
+
+    color: white;
+    background-color: rgb(75, 48, 37);
+    border-radius: 10px;
+}
+
+.addtocart {
+    /* border: 2px solid black; */
+    color: rgb(75, 48, 37);
+    margin: 50px 0px;
+}
+
+.addtocart .upper {
+    color: rgb(75, 48, 37);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px 0px;
+    text-align: center;
+
+}
+
+.addtocart .lower {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+    /* border: 2px solid black; */
+    line-height: 30px;
+
+
+}
+
+.cards {
+    overflow: hidden;
+    display: flex;
+}
+
+.addtocart .card {
+    margin: 20px;
+}
+
+.addtocart .lower img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.addtocart .lower button {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(252, 240, 166);
+    padding: 10px;
+    font-weight: bolder;
+    color: rgb(75, 48, 37);
+    cursor: pointer;
+}
+
+
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background: url('https://media.istockphoto.com/id/464448746/vector/fastfood-pattern.jpg?s=2048x2048&w=is&k=20&c=Aluo13nKe4Y0WYwSCZnGgx7lUlClQ0lFSeiZj09H5Yw=');
+    position: relative;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    color: rgb(75, 48, 37);
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.text h2 {
+    color: rgb(75, 48, 37);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.text .btn1,
+.btn2 {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.btn1 {
+    background-color: rgb(75, 48, 37);
+    color: white;
+}
+
+.btn1:hover {
+    background-color: white;
+    border: 2px solid rgb(75, 48, 37);
+    color: rgb(75, 48, 37);
+
+}
+
+.btn2 {
+    background-color: white;
+    border: 2px solid rgb(75, 48, 37);
+    color: rgb(75, 48, 37);
+}
+
+.btn2:hover {
+    background-color: rgb(75, 48, 37);
+    color: white;
+
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    right: 20px;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.dropdown .dropdown-options a {
+    display: block;
+    color: rgb(75, 48, 37);
+
+    padding: 5px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(241, 241, 241);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.cover {
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+
+
+}
+
+.cover .left {
+    padding: 10px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(75, 48, 37);
+}
+
+.cover .right {
+    padding: 10px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(75, 48, 37);
+
+}
+
+.cover img {
+    width: 120px;
+}
+
+.sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow-x: scroll; */
+    /* border: 2px solid black; */
+    padding: 100px 0px;
+    font-weight: bold;
+    color: rgb(75, 48, 37);
+}
+
+.outerbox {
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+.outerbox .upper {
+    position: relative;
+    /* border: 2px solid black; */
+
+
+}
+
+.outerbox img {
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.innerbox {
+    text-align: center;
+
+    background-color: rgb(252, 240, 166);
+    color: rgb(75, 48, 37);
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    padding: 10px 0px;
+
+    border-radius: 0px 20px 0px 20px;
+
+    width: 50%;
+    font-size: 30px;
+
+}
+
+.outerbox .label {
+    background-color: rgb(75, 48, 37);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+
+}
+
+.sec3 {
+    color: rgb(75, 48, 37);
+
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 100px 0px;
+    background: linear-gradient(rgba(252, 240, 166, 0.403), white, white);
+}
+
+.sec3 h1 {
+    font-size: 40px;
+}
+
+.sec3 .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    padding: 50px 300px;
+
+}
+
+.icon {
+    margin: 20px;
+}
+
+
+.sec4,
+.sec5 {
+    padding: 100px 0px;
+    /* border: 2px solid black; */
+}
+
+.sec4 .upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding: 0px 100px;
+}
+
+.right button {
+    border: none;
+    background-color: rgb(255, 175, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.sec4 .lower {
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 50px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    /* border: 2px solid black; */
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.container:hover {
+    opacity: 70%;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.sec5 {
+    background: linear-gradient(rgba(252, 240, 166, 0.403), white, rgb(255, 175, 1));
+    padding-bottom: 0;
+}
+
+.sec5 .upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 10px;
+    /* border: 2px solid black; */
+
+
+    font-weight: bold;
+    color: rgb(75, 48, 37);
+}
+
+.box {
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 0px 40px;
+    border-right: 2px solid rgb(241, 241, 241);
+}
+
+.sec5 .lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin: 0px 200px;
+
+
+}
+
+.sec5 .lower div {
+    padding-top: 50px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.sec6 {
+    margin-top: 100px;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 100px 80px;
+    background: linear-gradient(rgba(252, 240, 166, 0.403), white, white);
+
+
+    /* background: url("https://media.istockphoto.com/id/464448746/vector/fastfood-pattern.jpg?s=2048x2048&w=is&k=20&c=Aluo13nKe4Y0WYwSCZnGgx7lUlClQ0lFSeiZj09H5Yw="); */
+
+
+
+}
+
+.sec6 .people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.people img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px rgb(75, 48, 37);
+    cursor: pointer;
+    animation-name: rotate;
+    animation: rotate 10s linear infinite;
+
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sec6 button {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+
+
+    background-color: rgb(75, 48, 37);
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sec6 button:hover {
+    background-color: white;
+    border: 1px solid rgb(75, 48, 37);
+    color: rgb(75, 48, 37);
+
+}
+
+.footer {
+
+    color: white;
+    padding: 100px 0px;
+    background-color: rgb(75, 48, 37);
+    padding-bottom: 0px;
+
+
+}
+
+.first {
+    /* height:300px; */
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybox a {
+    color: white;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.mybox {
+    margin: 50px;
+}
+
+.second {
+    text-align: center;
+    /* border: 2px solid white; */
+    padding: 50px;
+    line-height: 50px;
+}
+
+.second i {
+    color: rgb(252, 240, 166);
+}
+
+.second input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+
+}
+
+.second button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.third {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.wrapper {
+
+    background: rgb(252, 240, 166);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    border: 5px solid rgb(75, 48, 37);
+
+
+
+}
+
+.sec1.active {
+
+    filter: blur(20px);
+
+}
+
+.sec2.active {
+
+    filter: blur(20px);
+
+}
+
+.nav.active {
+    filter: blur(20px);
+
+}
+
+.cover.active {
+    filter: blur(20px);
+
+}
+
+
+.wrapper .title {
+    height: 90px;
+    background: rgb(75, 48, 37);
+
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.wrapper .title .close {
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: rgb(252, 240, 166);
+    box-shadow: inset 0px 0px 2px 2px rgba(252, 240, 166, 0.388);
+}
+
+form .row input::placeholder {
+    color: #999;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: rgb(75, 48, 37);
+
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: rgb(75, 48, 37);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px;
+    background: rgb(75, 48, 37);
+    border: 1px solid rgb(75, 48, 37);
+    cursor: pointer;
+    width: 100%;
+}
+
+form .button input:hover {
+    background: rgb(75, 48, 37);
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a {
+    color: rgb(75, 48, 37);
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media(min-width:1300px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media(max-width:1300px) {
+    .tags {
+        display: none;
+    }
+
+
+    .sec2,
+    .sec3,
+    .sec4,
+    .sec5,
+    .footer,
+    .sec6 {
+        overflow: auto;
+    }
+
+    .sec6 .people {
+        display: none;
+    }
+
+}

@@ -1,0 +1,385 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: IBM Plex Mono;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    /* padding: 30px; */
+    /* border: 2px solid black; */
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+}
+
+.logo {
+
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.logo img {
+    height: 10%;
+    width: 10%;
+    /* border: 2px solid black; */
+}
+
+.tags a {
+    /* border: 2px solid black; */
+    padding: 0px 20px;
+    color: rgb(75, 48, 37);
+    font-weight: bolder;
+}
+
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background: url('https://media.istockphoto.com/id/464448746/vector/fastfood-pattern.jpg?s=2048x2048&w=is&k=20&c=Aluo13nKe4Y0WYwSCZnGgx7lUlClQ0lFSeiZj09H5Yw=');
+    /* background-size: 70%; */
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    color: rgb(75, 48, 37);
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.text h2 {
+    color: rgb(75, 48, 37);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.text .btn1,
+.btn2 {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.btn1 {
+    background-color: rgb(75, 48, 37);
+    color: white;
+}
+
+.btn1:hover {
+    background-color: white;
+    border: 2px solid rgb(75, 48, 37);
+    color: rgb(75, 48, 37);
+
+}
+
+.btn2 {
+    background-color: white;
+    border: 2px solid rgb(75, 48, 37);
+    color: rgb(75, 48, 37);
+}
+
+.btn2:hover {
+    background-color: rgb(75, 48, 37);
+    color: white;
+
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    right: 20px;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.dropdown .dropdown-options a {
+    display: block;
+    color: rgb(75, 48, 37);
+
+    padding: 5px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(241, 241, 241);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.cover {
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+
+
+}
+
+.cover .left {
+    padding: 10px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(75, 48, 37);
+}
+
+.cover .right {
+    padding: 10px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(75, 48, 37);
+
+}
+
+.cover img {
+    width: 120px;
+}
+
+@media(min-width:1300px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media(max-width:1300px) {
+    .tags {
+        display: none;
+    }
+
+}
+
+
+.bg {
+    background-color: #FCF0A6;
+}
+
+
+
+.panel {
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media(max-width:940px) {
+
+    .panel,
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+.left i {
+    border: 2px solid black;
+    color: white;
+    background-color: #fbaf32;
+    border: 2px solid #fbaf32;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.r1 {
+    padding: 10px;
+    color: #719a0a;
+    font-weight: 500;
+}
+
+.right i {
+    color: #fbaf32;
+
+}
+
+.right i:hover {
+    color: #719a0a;
+}
+
+.lefty,
+.middle1,
+.middle2,
+.righty {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .04);
+
+}
+
+.left {
+    margin: 8px;
+}
+
+
+.containerp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    padding: 0px 35px;
+}
+
+.left_containerp,
+.right_containerp {
+    width: 50%;
+    margin: 20px;
+    /* border: 2px solid black; */
+    height: 400px;
+}
+
+iframe {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid grey;
+    font-size: 16px;
+
+
+}
+
+input {
+    height: 40px;
+
+}
+
+form button {
+    width: 30%;
+    height: 55px;
+    border-radius: 5px;
+    color: white;
+    background-color: #fbaf32;
+    padding: 5px;
+    border: 2px solid #fbaf32;
+    margin: 10px;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #fbaf32;
+}
+
+
+
+
+
+
+
+footer {
+    color: white;
+    padding: 100px 0px;
+    background-color: rgb(75, 48, 37);
+    padding-bottom: 0px;
+}
+
+.first {
+    /* height:300px; */
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybox a {
+    color: white;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.mybox {
+    margin: 50px;
+}
+
+.second {
+    text-align: center;
+    /* border: 2px solid white; */
+    padding: 50px;
+    line-height: 50px;
+}
+
+.second i {
+    color: rgb(252, 240, 166);
+}
+
+.second input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+
+}
+
+.second button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(252, 240, 166);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.third {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
